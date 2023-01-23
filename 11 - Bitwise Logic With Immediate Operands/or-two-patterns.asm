@@ -4,6 +4,6 @@
 
 main:
 	ori	$8, $0, 0x0FA5		# put first pattern into register $8
-	ori	$10, $8, 0x368F		# or ($8) with second pattern.  Result to $10.
+	ori	$10, $8, 0x368F		# or ($8) with second pattern. Result to $10.
 
 ## End of file

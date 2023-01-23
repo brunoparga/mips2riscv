@@ -24,6 +24,6 @@ main:
 
 	ori	$8, $9, 0x004A		# The actual assembler
 					# should create the same machine
-			       		# instruction as we now have in $25
+					# instruction as we now have in $25
 
 ## end of file

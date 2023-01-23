@@ -3,7 +3,7 @@
 ## the rest to zero), and so on. Use only one ori instruction in your program,
 ## to set the bit in register $1.
 
-## ori   $1,$0,0x01
+## 	ori	$1,$0,0x01
 
 ## Don't use any ori instructions other than that one. Note: bit 1 of a register
 ## is the second from the right, the one that (in unsigned binary) corresponds

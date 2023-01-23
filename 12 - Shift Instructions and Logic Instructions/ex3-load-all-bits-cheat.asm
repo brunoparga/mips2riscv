@@ -1,7 +1,7 @@
 ## Start out a program with the instruction that puts a single one-bit into
 ## register one:
 
-## ori   $1,$0,0x01
+## 	ori	$1,$0,0x01
 
 ## Now, by using only shift instructions and register to register logic
 ## instructions, put the pattern 0xFFFFFFFF into register $1. Don't use another
