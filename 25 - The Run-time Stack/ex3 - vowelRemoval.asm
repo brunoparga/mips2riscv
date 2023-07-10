@@ -53,12 +53,13 @@ pushLoop:
 
 	# Check if we're done
 	beq	$t1, 0xa, endString
+	nop
 
 	# If the character isn't a vowel, we push it and move the pointer
 	subu	$sp, 4
 	sw	$t1, ($sp)
-	addu	$t2, 1
 	j	pushLoop
+	addu	$t2, 1
 
 endString:
 	sb	$zero, string($t2)		# write null to end string
@@ -67,9 +68,10 @@ popLoop:
 	lb	$t1, ($sp)
 	addu	$sp, 4
 	subu	$t2, 1				# decrement pointer
-	sb	$t1, string($t2)		# write it
 	beqz	$t2, print			# we're done
+	sb	$t1, string($t2)		# write it
 	j	popLoop
+	nop
 
 print:
 	li	$v0, 4
